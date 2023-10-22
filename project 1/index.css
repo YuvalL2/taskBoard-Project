@@ -1,0 +1,146 @@
+body {
+    min-height: 100vh;
+    background: #223243;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 40px 50px;
+}
+
+.task {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(white, rgb(133, 133, 133));
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(white, rgb(164, 164, 164));
+    border: 8px solid #223243;
+    box-shadow: -5px -5px 15px rgba(255, 225, 225, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35),
+        inset -5px -5px 15px rgba(255, 225, 225, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.remove {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+.formSignup {
+    padding: 40px;
+    border-radius: 20px;
+    border: 8px solid #223243;
+    box-shadow: -5px -5px 15px rgba(255, 225, 225, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35),
+        inset -5px -5px 15px rgba(255, 225, 225, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+
+.formSignup .inputBox input {
+    gap: 25px;
+    padding: 12px 10px 12px 25px;
+    border: none;
+    width: 100%;
+    background: #223243;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 225, 225, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+    color: #009b89;
+}
+
+.formSignup .inputBox label {
+    color: #00dfc4;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.remove {
+    opacity: 0;
+    transition: 500ms !important;
+    color: #00c5ae;
+    font-size: x-large
+}
+
+.task:hover .remove {
+    opacity: 1;
+}
+
+.description {
+    height: 150px;
+    overflow: auto;
+    word-break: break-all;
+    overflow-y: hidden;
+
+}
+
+
+.task {
+    width: 170px;
+    height: 230px;
+    position: relative;
+    padding: 35px 10px;
+    list-style-type: none;
+    color: black;
+    animation-name: fadeNote;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeNote {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.task .description {
+    height: 120px;
+    overflow: auto;
+    word-break: break-all;
+}
+
+.task::-webkit-scrollbar {
+    display: none;
+}
+
+.time {
+    color: #009b89;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-top: 18px;
+    margin-top: auto;
+    font-size: 11px;
+}
+
+
+#timeBox {
+    font-size: 92%;
+}
+
+.taskBoardTitle {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00c5ae;
+    text-align: center;
+}
+
+.dateTime {
+    display: flex;
+
+}
+
+.buttons {
+    text-align: center;
+}
